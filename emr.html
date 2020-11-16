@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Unified Health Management Suite</title>
+        <meta content="Responsive admin theme build on top of Bootstrap 4" name="description" />
+        <meta content="Themesdesign" name="author" />
+        <link rel="shortcut icon" href="assets/images/favicon.jpg">
+
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="images/favicon.jpg">
+		
+
+        <link href="css/style.default.css" rel="stylesheet">
+        <link href="css/select2.css" rel="stylesheet" />
+		
+		
+		<script src="assets/js/tab.js"></script>
+		<script>
+function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+</script>
+	
+
+    </head>
+
+    <body>
+
+        <!-- Begin page -->
+        <div id="wrapper">
+
+            <!-- Top Bar Start -->
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="index.html" class="logo">
+                        <span class="logo-light">
+                            <i class="mdi mdi-hospital"></i> Unified Health Management Suite
+                        </span>
+                        <span class="logo-sm">
+                            <i class="mdi mdi-hospital"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <nav class="navbar-custom">
+                    <ul class="navbar-right list-inline float-right mb-0">
+                        
+                        
+                        
+                        
+
+                        <li class="dropdown notification-list list-inline-item">
+                            <div class="dropdown notification-list nav-pro-img">
+                                <a class="dropdown-toggle nav-link arrow-none nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                                    <img src="assets/images/doctor.jpg" alt="user" class="rounded-circle">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                    <!-- item-->
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle"></i> Profile</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-wallet"></i> My Wallet</a>
+                                    <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings"></i> Settings</a>
+                                    <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline"></i> Lock screen</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power text-danger"></i> Logout</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="list-inline menu-left mb-0">
+                        <li class="float-left">
+                            <button class="button-menu-mobile open-left waves-effect">
+                                <i class="mdi mdi-menu"></i>
+                            </button>
+                        </li>
+                       
+                    </ul>
+
+                </nav>
+
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="left side-menu">
+                <div class="slimscroll-menu" id="remove-scroll">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu" id="side-menu">
+                            
+                            <li>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="icon-accelerator"></i><span class="badge badge-success badge-pill float-right"></span> <span> Dashboard </span>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-hospital"></i><span> Patient portal<span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                <ul class="submenu">
+                                    <li><a href="addpatient.html">Register Patient</a></li>
+                                    <li><a href="viewpatient.html">View Patient Information</a></li>
+                                    <li><a href="email-compose.html"></a></li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="icon-paper-sheet"></i><span> Appointments <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                <ul class="submenu">
+                                    <li><a href="doctorappoint.html">Doctor Appointment</a></li>
+                                    <li><a href="patientappoint.html">Patient Appointment</a></li>
+                                    <li><a href="addappoint.html">Add Appointment</a></li>
+                                    <li><a href="surgeryappoint.html">Surgery Schedule</a></li>
+                                    
+                                </ul>
+                            </li>
+
+                            
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="icon-pencil-ruler"></i> <span> Pharmacy <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="inventory.html">Inventory</a></li>
+                                    <li><a href="medication.html">Medication</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi-test-tube"></i> <span> Lab & Radiology <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
+                                <ul class="submenu">
+                                    <li><a href="analysis.html">Test Analysis</a></li>
+                                    <li><a href="result.html">Test Result</a></li>
+                                    <li><a href="observation.html">ICU Observation</a></li>
+                                    <li><a href="unassociated.html">Unassociated Result</a></li>
+									 <li><a href="specimen.html">Specimen </a></li>
+									 
+                                    
+                                </ul>
+                            </li>
+
+                           
+
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="icon-graph"></i><span> Report <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
+                                <ul class="submenu">
+                                    <li><a href="reportcont.html">Report Content</a></li>
+                                    <li><a href="financial.html">Financial Report</a></li>
+                                    <li><a href="billhistory.html">Visit Report</a></li>
+                                    <li><a href="appointreport.html">Appointment Report</a></li>
+                                    
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0);" class="waves-effect"><i class="icon-spread"></i><span> Billing <span class="float-right menu-arrow"></a>
+                                
+                            </li>
+
+                            
+
+                        </ul>
+
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="content-page">
+                <!-- Start content -->
+                <div class="content">
+                    <div class="container-fluid">
+                        <div class="page-title-box">
+                            <div class="row align-items-center">
+                                <div class="col-sm-6">
+                                    <h4 class="page-title"></h4>
+                                </div>
+                               
+                            </div> <!-- end row -->
+                        </div>
+                        <!-- end page-title -->
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card m-b-30">
+                                    <div class="card-body">
+									
+        
+                                        <h4 class="mt-0 header-title">Patient Registration</h4>
+                                        <p class="sub-title"></p>
+										<div class="search">
+									<div class="form-box">
+									<input type="text" class="search-field business" placeholder="Type to search patient information"/>
+									<button class="search-btn" type="button">search</button>
+									
+									</div>
+									</div>
+									<p class="sub-title"></p>
+        
+                                        <form class="reg" action="#">
+										
+                                            <div class="section row">
+        
+                                            <div class="col-md-6 ph10">
+                                                <label>Surname</label>
+                                                <input type="text" name="surname" class="form-control" required placeholder="Enter Surname" value=""/>
+                                            </div>
+        
+                                           <div class="col-md-6 ph10">
+                                                <label>First Name</label>
+                                                <div>
+                                                    <input type="firstname" id="firstname" class="form-control" required
+                                                           placeholder="Enter first name" name="firstname" value=""/>
+                                                </div>
+                                                
+                                            </div></div>
+											<div class="section row">
+        
+                                            <div class="col-md-6 ph10">
+                                                <label>Telephone</label>
+                                                <div>
+                                                    <input type="phone" class="form-control" required
+                                                            placeholder="+234 80 332 87200" name="phone" value=""/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 ph10">
+                                                <label>Date of Birth</label>
+                                                <div>
+                                                    <input type="date" class="form-control" name="dob" value=""
+                                                            />
+                                                </div>
+                                            </div></div>
+											<div class="section row">
+											<div class="col-md-6 ph10">
+                                                <label>Gender</label>
+                                                <div>
+                                                    <select class="form-control">
+                                            <option>--Select Gender--</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+											<option>Other</option>
+                                        </select>
+                                                </div>
+                                            </div>
+											
+											
+											
+											<div class="col-md-6 ph10">
+                                                <label>Blood Group</label>
+                                                <div>
+                                                    <select class="form-control">
+                                            <option>--Select Blood Type--</option>
+                                            <option>A+</option>
+                                            <option>A-</option>
+											<option>AB+</option>
+											<option>AB-</option>
+											<option>B+</option>
+											<option>B-</option>
+											<option>O+</option>
+											<option>O-</option>
+											<option>Other</option>
+                                        </select>
+                                                </div>
+                                            </div></div>
+											<div class="section row">
+											<div class="col-md-6 ph10">
+                                                <label>Nationality</label>
+                                                <div>
+                                                    <input type="text" name="country" value=""
+                                                           class="form-control" required
+                                                           placeholder="country"/>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-md-6 ph10">
+                                                <label>Referred By</label>
+                                                <div>
+                                                    <input type="text" name="referredby" value=""
+                                                           class="form-control" required
+                                                           placeholder="Referred by"/>
+                                                </div>
+                                            </div></div>
+                                           <div class="section row">
+											<div class="col-md-6 ph10">
+                                                <label>Referred Date</label>
+                                                <div>
+                                                    <input type="date" class="form-control" name="referreddate" value=""
+                                                            />
+                                                </div>
+                                            </div>
+											<div class="col-md-6 ph10">
+                                                <label>Email</label>
+                                                <div>
+                                                    <input type="email" id="email" class="form-control" 
+                                                           placeholder="Enter Email Here..." name="email" value=""/>
+                                                </div>
+                                                
+                                            </div></div>
+											<div class="form-group">
+                                                <label>Allow Email Messages</label>
+                                                <div>
+                                                    <select class="form-control">
+                                            <option>--Select --</option>
+                                            <option>Yes</option>
+                                            <option>No</option>
+                                        </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Address</label>
+                                                <div>
+                                                    <textarea required class="form-control" rows="5" name="address" value=""></textarea>
+                                                </div>
+                                            </div>
+											
+											<div class="form-group">
+											<form action="/" id="frmFileUpload" class="dropzone" method="post" enctype="multipart/form-data">
+                                    <div class="dz-message">
+                                        <div class="drag-icon-cph"> <i class="material-icons"></i> </div>
+                                        <img id="blah" src="http://placehold.it/180" alt="your image" />
+											<input type='file' onchange="readURL(this);" />
+                                         </div>
+                                    
+                                </form>
+										</div>	
+                                            <div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5">
+                                                        Reset
+                                                    </button>
+													<button type="delete" class="btn btn-primary waves-effect waves-light">
+                                                        Delete
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+        
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+        
+                            <div class="col-lg-6">
+                                <div class="card1 m-b-30">
+                                    <div class="card-body">
+        
+                                        <h4 class="mt-0 header-title">Patient Visit</h4>
+                                        <p class="sub-title"></p>
+										<div class="search">
+									<div class="form-box">
+									<input type="text" class="search-field business" placeholder="Type to search patient information"/>
+									<button class="search-btn" type="button">search</button>
+									
+									</div>
+									</div>
+        
+                                        <form action="#">
+										<div class="section row">
+        
+                                            <div class="col-md-6 ph10">
+                                                <label>Patient ID</label>
+                                                <div>
+                                                    <input type="text" name="patientid" class="form-control" value="00199827FC"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 ph10">
+                                                <label>Surname</label>
+                                                <div>
+                                                    <input type="text" class="form-control" name="surname" value="Peter"
+                                                            />
+                                                </div>
+                                            </div></div>
+                                            <div class="section row">
+                                              <div class="col-md-6 ph10">
+                                                <label>First Name</label>
+                                                <div>
+                                                    <input type="text" class="form-control" name="firstname" value="John"/>
+                                                </div>
+                                            </div>
+                                            
+                                           
+                                           <div class="col-md-6 ph10">
+                                                <label>Gender</label>
+                                                <div>
+                                                    <input type="text" class="form-control" name="gender" value="Male"/>
+                                                </div>
+                                            </div></div>
+											<div class="tabcontainer">
+											<div class="buttoncontainer">
+											
+											<button onclick="showPanel(0,'#2467cc');">History of Present Illness</button>
+											<button onclick="showPanel(1,'#f44336');">Review of Symptoms</button>
+											<button onclick="showPanel(2,'#2196f3');">Vital Signs</button>
+											<button onclick="showPanel(3,'#ff5722');">Physical Examination</button>
+											<button onclick="showPanel(4,'#f44336');">Assessment</button>
+											<button onclick="showPanel(5,'#2196f3');">Plan</button>
+											</div>
+											
+											<div class="tabpanel">
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Location:</label>
+                                                <input type="text" name="location" class="form-control" required placeholder="Enter location" value=""/>
+                                            </div>
+        
+                                           <div class="col-md-5 ph10">
+                                                <label>Quality:</label>
+                                                <div>
+                                                    <input type="text" id="quality" class="form-control" required
+                                                           placeholder="Enter quality" name="quality" value=""/>
+                                                </div>
+												
+                                                
+                                            </div></div>
+											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Severity:</label>
+                                                <input type="text" name="severity" class="form-control" required placeholder="How severe" value=""/>
+                                            </div>
+        
+                                           <div class="col-md-5 ph10">
+                                                <label>Durations:</label>
+                                                <div>
+                                                    <input type="text" id="duration" class="form-control" required
+                                                           placeholder="Enter duration" name="duration" value=""/>
+                                                </div>
+												
+                                                
+                                            </div></div>
+											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Modifying Factors:</label>
+                                                <input type="text" name="factors" class="form-control" required placeholder="" value=""/>
+                                            </div>
+        
+                                           <div class="col-md-5 ph10">
+                                                <label>Signs & Symptoms:</label>
+                                                <div>
+                                                    <input type="text" id="symptoms" class="form-control" required
+                                                           placeholder="Possible symptoms" name="symptoms" value=""/>
+                                                </div>
+												
+                                                
+                                            </div></div>
+											<div class="form-group">
+                                                <label>History</label><div class="col-md-10 ">
+                                                <div>
+                                                    <textarea required class="form-control" rows="4" name="history" value=""></textarea>
+                                                </div></div>
+											
+											</div>	<div class="form-group">
+                                                </div>
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													<a href="#" class="button" id="button">Medical History</a>
+													<div class="popup">
+													<div class="popup-content"><img src="assets/images/close1.png" alt="close" class="close">
+													<div class="tabcontainer1">
+													<div class="buttoncontainer1">
+											
+											<button onclick="mhshowPanel(0,'#2467cc');">Past Medical History</button>
+											<button onclick="mhshowPanel(1,'#f44336');">Family Medical History</button>
+											<button onclick="mhshowPanel(2,'#2196f3');">Social Medical History</button>
+											<button onclick="mhshowPanel(3,'#ff5722');">OB/Menstrual History</button>
+											
+											</div>
+											<div class="tabpanel1">
+											
+                                            <div class="col-md-12 ph10">
+                                                <label>Past Illness:</label>
+                                                <input type="text" name="pastillness" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Past Hospitalization:</label>
+                                                <input type="text" name="pasthosital" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Past Medications:</label>
+                                                <input type="text" name="pastmedication" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Allergies:</label>
+                                                <input type="text" name="allergies" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel1">
+											<div class="form-group">
+                                                <label>History</label><div class="col-md-10 ">
+                                                <div>
+                                                    <textarea required class="form-control" rows="4" name="history" value=""></textarea>
+                                                </div></div>
+											
+											</div>	<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel1"><div class="col-md-12 ph10">
+                                                <label>Tobacco Use:</label>
+                                                <input type="text" name="tobaccouse" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Alcohol Use:</label>
+                                                <input type="text" name="alcoholuse" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Illicit Drug Use:</label>
+                                                <input type="text" name="illicitdrug" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Sexual History:</label>
+                                                <input type="text" name="sexualhistory" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div></div>
+											<div class="tabpanel1">											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Score:</label>
+                                                <input type="text" name="obscore" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Dysmenorrhea:</label>
+                                                <input type="text" name="dysmenorrhea" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Menarch:</label>
+                                                <input type="text" name="obmenarch" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>OCP Use:</label>
+                                                <input type="text" name="ocp" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">     
+                                            <div class="col-md-5 ph10">
+                                                <label>Menstrual Period:</label>
+                                                <input type="text" name="menstralperiod" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Regularity:</label>
+                                                <input type="text" name="skin" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											</div>
+													</div></div>
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel">
+											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>General:</label>
+                                                <input type="text" name="general" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Skin/Breast:</label>
+                                                <input type="text" name="skin" class="form-control" value=""/>
+                                            </div>
+											</div>
+        
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Eyes/Ears/Nose/Mouth/Throat:</label>
+                                                <input type="text" name="senseorgan" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Cardiovascular:</label>
+                                                <input type="text" name="cardiovascular" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Respiratory:</label>
+                                                <input type="text" name="respiratory" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Gastrointestinal:</label>
+                                                <input type="text" name="gastrointestinal" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Genitourinary:</label>
+                                                <input type="text" name="genitourinary" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Musculoskeletal:</label>
+                                                <input type="text" name="musculoskeletal" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Neurologic/Psychiatric:</label>
+                                                <input type="text" name="neurologic" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Allergy/Immunologic/Endocrine:</label>
+                                                <input type="text" name="allergy" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													<a href="#" class="button" id="button1">Medical History</a>
+													<div class="popup1">
+													<div class="popup1-content"><img src="assets/images/close1.png" alt="close" class="close1">
+													<div class="tabcontainer2">
+													<div class="buttoncontainer2">
+											
+											<button onclick="pmhshowPanel(0,'#2467cc');">Past Medical History</button>
+											<button onclick="pmhshowPanel(1,'#f44336');">Family Medical History</button>
+											<button onclick="pmhshowPanel(2,'#2196f3');">Social Medical History</button>
+											<button onclick="pmhshowPanel(3,'#ff5722');">OB/Menstrual History</button>
+											
+											</div>
+											<div class="tabpanel2">
+											
+                                            <div class="col-md-12 ph10">
+                                                <label>Past Illness:</label>
+                                                <input type="text" name="pastillness" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Past Hospitalization:</label>
+                                                <input type="text" name="pasthosital" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Past Medications:</label>
+                                                <input type="text" name="pastmedication" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Allergies:</label>
+                                                <input type="text" name="allergies" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel2">
+											<div class="form-group">
+                                                <label>History</label><div class="col-md-10 ">
+                                                <div>
+                                                    <textarea required class="form-control" rows="4" name="history" value=""></textarea>
+                                                </div></div>
+											
+											</div>	<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel2"><div class="col-md-12 ph10">
+                                                <label>Tobacco Use:</label>
+                                                <input type="text" name="tobaccouse" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Alcohol Use:</label>
+                                                <input type="text" name="alcoholuse" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Illicit Drug Use:</label>
+                                                <input type="text" name="illicitdrug" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Sexual History:</label>
+                                                <input type="text" name="sexualhistory" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div></div>
+											<div class="tabpanel2">											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Score:</label>
+                                                <input type="text" name="obscore" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Dysmenorrhea:</label>
+                                                <input type="text" name="dysmenorrhea" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Menarch:</label>
+                                                <input type="text" name="obmenarch" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>OCP Use:</label>
+                                                <input type="text" name="ocp" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">     
+                                            <div class="col-md-5 ph10">
+                                                <label>Menstrual Period:</label>
+                                                <input type="text" name="menstralperiod" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Regularity:</label>
+                                                <input type="text" name="skin" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											</div>
+													</div></div>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel"><div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Blood Pressure:</label>
+                                                <input type="text" name="bloodpressure" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Tempreture:</label>
+                                                <input type="text" name="tempreture" class="form-control" value=""/>
+                                            </div>
+											</div>
+        
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Heart Rate:</label>
+                                                <input type="text" name="heartrate" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Height:</label>
+                                                <input type="text" name="height" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Respiratory Rate:</label>
+                                                <input type="text" name="repiratoryrate" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Weight:</label>
+                                                <input type="text" name="weight" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													<a href="#" class="button" id="button2">Medical History</a>
+													<div class="popup2">
+													<div class="popup2-content"><img src="assets/images/close1.png" alt="close" class="close2">
+													<div class="tabcontainer3">
+													<div class="buttoncontainer3">
+											
+											<button onclick="vmhshowPanel(0,'#2467cc');">Past Medical History</button>
+											<button onclick="vmhshowPanel(1,'#f44336');">Family Medical History</button>
+											<button onclick="vmhshowPanel(2,'#2196f3');">Social Medical History</button>
+											<button onclick="vmhshowPanel(3,'#ff5722');">OB/Menstrual History</button>
+											
+											</div>
+											<div class="tabpanel3">
+											
+                                            <div class="col-md-12 ph10">
+                                                <label>Past Illness:</label>
+                                                <input type="text" name="pastillness" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Past Hospitalization:</label>
+                                                <input type="text" name="pasthosital" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Past Medications:</label>
+                                                <input type="text" name="pastmedication" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Allergies:</label>
+                                                <input type="text" name="allergies" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel3">
+											<div class="form-group">
+                                                <label>History</label><div class="col-md-10 ">
+                                                <div>
+                                                    <textarea required class="form-control" rows="4" name="history" value=""></textarea>
+                                                </div></div>
+											
+											</div>	<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel3"><div class="col-md-12 ph10">
+                                                <label>Tobacco Use:</label>
+                                                <input type="text" name="tobaccouse" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Alcohol Use:</label>
+                                                <input type="text" name="alcoholuse" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Illicit Drug Use:</label>
+                                                <input type="text" name="illicitdrug" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Sexual History:</label>
+                                                <input type="text" name="sexualhistory" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div></div>
+											<div class="tabpanel3">											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Score:</label>
+                                                <input type="text" name="obscore" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Dysmenorrhea:</label>
+                                                <input type="text" name="dysmenorrhea" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Menarch:</label>
+                                                <input type="text" name="obmenarch" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>OCP Use:</label>
+                                                <input type="text" name="ocp" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">     
+                                            <div class="col-md-5 ph10">
+                                                <label>Menstrual Period:</label>
+                                                <input type="text" name="menstralperiod" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Regularity:</label>
+                                                <input type="text" name="skin" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											</div>
+													</div></div>
+													
+                                                </div>
+                                            </div>
+											
+											</div>
+											<div class="tabpanel"><div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>General:</label>
+                                                <input type="text" name="general" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Skin/Breast:</label>
+                                                <input type="text" name="skin" class="form-control" value=""/>
+                                            </div>
+											</div>
+        
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Eyes/Ears/Nose/Mouth/Throat:</label>
+                                                <input type="text" name="senseorgan" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Cardiovascular:</label>
+                                                <input type="text" name="cardiovascular" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Respiratory:</label>
+                                                <input type="text" name="respiratory" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Gastrointestinal:</label>
+                                                <input type="text" name="gastrointestinal" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Genitourinary:</label>
+                                                <input type="text" name="genitourinary" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Musculoskeletal:</label>
+                                                <input type="text" name="musculoskeletal" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>Neurologic/Psychiatric:</label>
+                                                <input type="text" name="neurologic" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Allergy/Immunologic/Lymphatic:</label>
+                                                <input type="text" name="allergy" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													<a href="#" class="button" id="button3">Medical History</a>
+													<div class="popup3">
+													<div class="popup3-content"><img src="assets/images/close1.png" alt="close" class="close3">
+													<div class="tabcontainer4">
+													<div class="buttoncontainer4">
+											
+											<button onclick="peshowPanel(0,'#2467cc');">Past Medical History</button>
+											<button onclick="peshowPanel(1,'#f44336');">Family Medical History</button>
+											<button onclick="peshowPanel(2,'#2196f3');">Social Medical History</button>
+											<button onclick="peshowPanel(3,'#ff5722');">OB/Menstrual History</button>
+											
+											</div>
+											<div class="tabpanel4">
+											
+                                            <div class="col-md-12 ph10">
+                                                <label>Past Illness:</label>
+                                                <input type="text" name="pastillness" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Past Hospitalization:</label>
+                                                <input type="text" name="pasthosital" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Past Medications:</label>
+                                                <input type="text" name="pastmedication" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Allergies:</label>
+                                                <input type="text" name="allergies" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel4">
+											<div class="form-group">
+                                                <label>History</label><div class="col-md-10 ">
+                                                <div>
+                                                    <textarea required class="form-control" rows="4" name="history" value=""></textarea>
+                                                </div></div>
+											
+											</div>
+												<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel4"><div class="col-md-12 ph10">
+                                                <label>Tobacco Use:</label>
+                                                <input type="text" name="tobaccouse" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Alcohol Use:</label>
+                                                <input type="text" name="alcoholuse" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Illicit Drug Use:</label>
+                                                <input type="text" name="illicitdrug" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Sexual History:</label>
+                                                <input type="text" name="sexualhistory" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div></div>
+											<div class="tabpanel4">											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Score:</label>
+                                                <input type="text" name="obscore" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Dysmenorrhea:</label>
+                                                <input type="text" name="dysmenorrhea" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Menarch:</label>
+                                                <input type="text" name="obmenarch" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>OCP Use:</label>
+                                                <input type="text" name="ocp" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">     
+                                            <div class="col-md-5 ph10">
+                                                <label>Menstrual Period:</label>
+                                                <input type="text" name="menstralperiod" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Regularity:</label>
+                                                <input type="text" name="skin" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											</div>
+													</div></div>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel">
+																			
+											<div class="form-group">
+                                                <label>History</label>
+                                                <div>
+                                                    <textarea required class="form-control" rows="4" name="history" value=""></textarea>
+                                                </div>
+											
+											</div>
+												<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													<a href="#" class="button" id="button5">Medical History</a>
+													<div class="popup5">
+													<div class="popup5-content"><img src="assets/images/close1.png" alt="close" class="close5">
+													<div class="tabcontainer6">
+													<div class="buttoncontainer6">
+											
+											<button onclick="medihistoryshowPanel(0,'#2467cc');">Past Medical History</button>
+											<button onclick="medihistoryshowPanel(1,'#f44336');">Family Medical History</button>
+											<button onclick="medihistoryshowPanel(2,'#2196f3');">Social Medical History</button>
+											<button onclick="medihistoryshowPanel(3,'#ff5722');">OB/Menstrual History</button>
+											
+											</div>
+											<div class="tabpanel6">
+											
+                                            <div class="col-md-12 ph10">
+                                                <label>Past Illness:</label>
+                                                <input type="text" name="pastillness" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Past Hospitalization:</label>
+                                                <input type="text" name="pasthosital" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Past Medications:</label>
+                                                <input type="text" name="pastmedication" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Allergies:</label>
+                                                <input type="text" name="allergies" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel6">
+											<div class="form-group">
+                                                <label>History</label><div class="col-md-10 ">
+                                                <div>
+                                                    <textarea required class="form-control" rows="4" name="history" value=""></textarea>
+                                                </div></div>
+											
+											</div>
+												<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel6"><div class="col-md-12 ph10">
+                                                <label>Tobacco Use:</label>
+                                                <input type="text" name="tobaccouse" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Alcohol Use:</label>
+                                                <input type="text" name="alcoholuse" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Illicit Drug Use:</label>
+                                                <input type="text" name="illicitdrug" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Sexual History:</label>
+                                                <input type="text" name="sexualhistory" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div></div>
+											<div class="tabpanel6">											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Score:</label>
+                                                <input type="text" name="obscore" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Dysmenorrhea:</label>
+                                                <input type="text" name="dysmenorrhea" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Menarch:</label>
+                                                <input type="text" name="obmenarch" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>OCP Use:</label>
+                                                <input type="text" name="ocp" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">     
+                                            <div class="col-md-5 ph10">
+                                                <label>Menstrual Period:</label>
+                                                <input type="text" name="menstralperiod" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Regularity:</label>
+                                                <input type="text" name="skin" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											</div>
+													</div></div>
+													
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel">
+											<div class="section row">
+        
+                                            <div class="col-md-6 ph10">
+                                                <label>Body Region:</label>
+                                                <input type="text" name="bodyregion" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-6 ph10">
+                                                <label>Organ System:</label>
+                                                <input type="text" name="organsystem" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													<a href="#" class="button" id="button4">Medical History</a>
+													<div class="popup4">
+													<div class="popup4-content"><img src="assets/images/close1.png" alt="close" class="close4">
+													<div class="tabcontainer5">
+													<div class="buttoncontainer5">
+											
+											<button onclick="ashowPanel(0,'#2467cc');">Past Medical History</button>
+											<button onclick="ashowPanel(1,'#f44336');">Family Medical History</button>
+											<button onclick="ashowPanel(2,'#2196f3');">Social Medical History</button>
+											<button onclick="ashowPanel(3,'#ff5722');">OB/Menstrual History</button>
+											
+											</div>
+											<div class="tabpanel5">
+											
+                                            <div class="col-md-12 ph10">
+                                                <label>Past Illness:</label>
+                                                <input type="text" name="pastillness" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Past Hospitalization:</label>
+                                                <input type="text" name="pasthosital" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Past Medications:</label>
+                                                <input type="text" name="pastmedication" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Allergies:</label>
+                                                <input type="text" name="allergies" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel5">
+											<div class="form-group">
+                                                <label>History</label><div class="col-md-10 ">
+                                                <div>
+                                                    <textarea required class="form-control" rows="4" name="history" value=""></textarea>
+                                                </div></div>
+											
+											</div>
+											
+												<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											<div class="tabpanel5"><div class="col-md-12 ph10">
+                                                <label>Tobacco Use:</label>
+                                                <input type="text" name="tobaccouse" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Alcohol Use:</label>
+                                                <input type="text" name="alcoholuse" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Illicit Drug Use:</label>
+                                                <input type="text" name="illicitdrug" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Sexual History:</label>
+                                                <input type="text" name="sexualhistory" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div></div>
+											<div class="tabpanel5">											
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Score:</label>
+                                                <input type="text" name="obscore" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Dysmenorrhea:</label>
+                                                <input type="text" name="dysmenorrhea" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">
+        
+                                            <div class="col-md-5 ph10">
+                                                <label>OB Menarch:</label>
+                                                <input type="text" name="obmenarch" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>OCP Use:</label>
+                                                <input type="text" name="ocp" class="form-control" value=""/>
+                                            </div>
+											</div>
+											<div class="section row">     
+                                            <div class="col-md-5 ph10">
+                                                <label>Menstrual Period:</label>
+                                                <input type="text" name="menstralperiod" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-5 ph10">
+                                                <label>Regularity:</label>
+                                                <input type="text" name="skin" class="form-control" value=""/>
+                                            </div>
+											</div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													
+                                                </div>
+                                            </div>
+											</div>
+											</div>
+													</div></div>
+													
+                                                </div>
+                                            </div></div>
+											<div class="tabpanel">
+											
+        
+                                            <div class="col-md-12 ph10">
+                                                <label>Diagnostics:</label>
+                                                <input type="text" name="diagnostic" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Therapeutics:</label>
+                                                <input type="text" name="therapeutics" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Other Recommendations:</label>
+                                                <input type="text" name="recommendation" class="form-control" value=""/>
+                                            </div>
+											 <div class="col-md-12 ph10">
+                                                <label>Emergency Response:</label>
+                                                <input type="text" name="emergencyresponse" class="form-control" value=""/>
+                                            </div>
+											<div class="col-md-12 ph10">
+                                                <label>Work Related:</label>
+                                                <input type="text" name="relatedwork" class="form-control" value=""/>
+                                            </div>
+											
+											<div class="form-group">
+                                                <div>
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Save
+                                                    </button>
+                                                    <button type="reset" class="btn btn-secondary waves-effect m-l-5" align="center">
+                                                        Reset
+                                                    </button>
+													<button type="submit" class="btn btn-primary waves-effect waves-light" style="center">
+                                                        Medical History
+                                                    </button>
+													
+                                                </div>
+                                            </div></div>
+											</div>
+        
+        
+                                            
+											</div>
+         
+                                        </form>
+        
+                                    </div>
+                                </div>
+                            </div> 
+							
+							<!-- end col -->
+                        </div> <!-- end row -->      
+
+                        
+                    </div>
+                    <!-- container-fluid -->
+
+                </div>
+                <!-- content -->
+
+                <footer class="footer">
+                    © 2020 <span class="d-none d-sm-inline-block"> - Unified Health Management Suite  by <em>Centrifuge Group</em></span>.
+                </footer>
+
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+
+        <!-- jQuery  -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/metismenu.min.js"></script>
+        <script src="assets/js/jquery.slimscroll.js"></script>
+        <script src="assets/js/waves.min.js"></script>
+		<script src="assets/js/tab.js"></script>
+
+        <!-- Parsley js -->
+        <script src="../plugins/parsleyjs/parsley.min.js"></script>
+
+        <!-- App js -->
+        <script src="assets/js/app.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('form').parsley();
+            });
+        </script>
+
+        
+    </body>
+
+</html>
